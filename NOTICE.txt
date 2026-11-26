@@ -1,0 +1,10 @@
+GPL-3.0-or-later. See LICENSE.
+image_size.py is from 1038lab/ComfyUI-MiniMax-Remover,
+nodes/image_size_adjuster_node.py (retrieved 2026-11-26).
+https://github.com/1038lab/ComfyUI-MiniMax-Remover/blob/main/nodes/image_size_adjuster_node.py
+The registration key was renamed to WMRepairImageSizeAdjuster to avoid the
+unrelated djz-nodes ImageSizeAdjuster class overwriting it.
+Image/mask processing code is unchanged.
+mask_fill.py is a new MASK-only bounded future-fill implementation. It replaces
+the unused BBOX-dependent branch for this workflow, not a complete reimplementation
+of the third-party BBOX backfill node. No BBOX object is fabricated.
